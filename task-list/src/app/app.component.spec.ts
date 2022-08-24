@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cyberpunk-loki-edition'`, () => {
+  it(`should have as title 'task-list'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cyberpunk-loki-edition');
+    expect(app.title).toEqual('task-list');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('cyberpunk-loki-edition app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('task-list app is running!');
   });
 });

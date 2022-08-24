@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cyberpunk-loki-edition": {
+    "task-list": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cyberpunk-loki-edition",
+            "outputPath": "dist/task-list",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cyberpunk-loki-edition:build:production"
+              "browserTarget": "task-list:build:production"
             },
             "development": {
-              "browserTarget": "cyberpunk-loki-edition:build:development"
+              "browserTarget": "task-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cyberpunk-loki-edition:build"
+            "browserTarget": "task-list:build"
           }
         },
         "test": {
